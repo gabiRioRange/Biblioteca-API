@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: ["main"]
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,7 +24,18 @@ jobs:
           dotnet-version: 10.0.x
 
       - name: Restore
-        run: dotnet restore APIBiblioteca/APIBiblioteca.csproj
+        run: dotnet restore APIBiblioteca.slnx
 
       - name: Build
-        run: dotnet build APIBiblioteca/APIBiblioteca.csproj --configuration Release --no-restore
+        run: dotnet build APIBiblioteca.slnx --configuration Release --no-restore
+
+      - name: Test with coverage
+        run: dotnet test APIBiblioteca.Tests/APIBiblioteca.Tests.csproj --configuration Release --no-build --collect:"XPlat Code Coverage"
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          use_oidc: true
+          files: ./APIBiblioteca.Tests/TestResults/**/coverage.cobertura.xml
+          flags: unittests
+          fail_ci_if_error: false

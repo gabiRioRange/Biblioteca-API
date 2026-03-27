@@ -25,8 +25,8 @@ A **APIBiblioteca** é um projeto de estudo com organização limpa e foco em bo
 ## 🏷️ Badges (CI/Coverage)
 
 - O badge de **CI** já está ativo e ligado ao workflow em `.github/workflows/ci.yml`.
-- O badge de **Coverage** está apontando para o Codecov deste repositório.
-- Para refletir cobertura real, basta subir testes e integrar o upload de cobertura no pipeline.
+- O badge de **Coverage** está ligado ao Codecov e depende do upload no pipeline.
+- O workflow executa build + testes e publica `coverage.cobertura.xml` automaticamente.
 
 ## ✨ Funcionalidades
 
