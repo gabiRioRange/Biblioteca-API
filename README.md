@@ -1,13 +1,13 @@
 ﻿<div align="center">
-	<h1>📚 APIBiblioteca</h1>
-	<p>
-		<em>API RESTful para estudo de relacionamentos com EF Core, DTOs e AutoMapper.</em>
-	</p>
+  <h1>📚 APIBiblioteca</h1>
+  <p>
+    <em>API RESTful para estudo de relacionamentos com EF Core, DTOs e AutoMapper.</em>
+  </p>
 
-	![.NET](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet)
-	![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-Web%20API-5C2D91)
-	![EF Core](https://img.shields.io/badge/EF%20Core-SQLite-0F6CBD)
-	![Status](https://img.shields.io/badge/status-estudo-success)
+  <img src="https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet" alt=".NET 10" />
+  <img src="https://img.shields.io/badge/ASP.NET%20Core-Web%20API-5C2D91" alt="ASP.NET Core Web API" />
+  <img src="https://img.shields.io/badge/EF%20Core-SQLite-0F6CBD" alt="EF Core SQLite" />
+  <img src="https://img.shields.io/badge/status-estudo-success" alt="Status estudo" />
 </div>
 
 ---
