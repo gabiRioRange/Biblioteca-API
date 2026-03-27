@@ -1,0 +1,21 @@
+﻿# Build artifacts
+**/bin/
+**/obj/
+
+# Rider / IntelliJ
+.idea/
+*.sln.iml
+
+# User-specific
+*.user
+*.suo
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Local database
+APIBiblioteca/library.db
+APIBiblioteca/library.db-shm
+APIBiblioteca/library.db-wal
+
