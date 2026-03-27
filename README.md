@@ -4,6 +4,14 @@
     <em>API RESTful para estudo de relacionamentos com EF Core, DTOs e AutoMapper.</em>
   </p>
 
+  <a href="https://github.com/gabiRioRange/Biblioteca-API/actions/workflows/ci.yml">
+    <img src="https://github.com/gabiRioRange/Biblioteca-API/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI" />
+  </a>
+  <a href="https://codecov.io/gh/gabiRioRange/Biblioteca-API">
+    <img src="https://codecov.io/gh/gabiRioRange/Biblioteca-API/branch/main/graph/badge.svg" alt="Coverage" />
+  </a>
+  <br/>
+
   <img src="https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet" alt=".NET 10" />
   <img src="https://img.shields.io/badge/ASP.NET%20Core-Web%20API-5C2D91" alt="ASP.NET Core Web API" />
   <img src="https://img.shields.io/badge/EF%20Core-SQLite-0F6CBD" alt="EF Core SQLite" />
@@ -13,6 +21,12 @@
 ---
 
 A **APIBiblioteca** é um projeto de estudo com organização limpa e foco em boas práticas de API: entidades de domínio, mapeamento com AutoMapper, acesso a dados com EF Core e retorno via DTOs.
+
+## 🏷️ Badges (CI/Coverage)
+
+- O badge de **CI** já está ativo e ligado ao workflow em `.github/workflows/ci.yml`.
+- O badge de **Coverage** está apontando para o Codecov deste repositório.
+- Para refletir cobertura real, basta subir testes e integrar o upload de cobertura no pipeline.
 
 ## ✨ Funcionalidades
 
