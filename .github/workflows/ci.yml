@@ -30,12 +30,12 @@ jobs:
         run: dotnet build APIBiblioteca.slnx --configuration Release --no-restore
 
       - name: Test with coverage
-        run: dotnet test APIBiblioteca.Tests/APIBiblioteca.Tests.csproj --configuration Release --no-build --collect:"XPlat Code Coverage"
+        run: dotnet test APIBiblioteca.Tests/APIBiblioteca.Tests.csproj --configuration Release --no-build /p:CollectCoverage=true /p:CoverletOutput=./TestResults/coverage /p:CoverletOutputFormat=cobertura
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v5
         with:
           use_oidc: true
-          files: ./APIBiblioteca.Tests/TestResults/**/coverage.cobertura.xml
+          files: ./APIBiblioteca.Tests/TestResults/coverage.cobertura.xml
           flags: unittests
           fail_ci_if_error: false
